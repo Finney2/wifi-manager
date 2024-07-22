@@ -1,0 +1,391 @@
+
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #a5e65a, #a5e65a, #c0f080);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #9DC08B;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iNjI2LjAwMDAwMHB0IiBoZWlnaHQ9IjQ0Mi4wMDAwMDBwdCIgdmlld0JveD0iMCAwIDYyNi4wMDAwMDAgNDQyLjAwMDAwMCIKIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPgoKPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsNDQyLjAwMDAwMCkgc2NhbGUoMC4xMDAwMDAsLTAuMTAwMDAwKSIKZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSJub25lIj4KPHBhdGggZD0iTTAgNDI5MCBsMCAtMTI5IDEyOCAtNCAxMjcgLTMgLTEyNyAtMiAtMTI4IC0yIDAgLTM3MCAwIC0zNzAgMjAwIDAKMjAwIDAgMCAyOTUgYzAgMjcxIC0yIDI5OSAtMTkgMzMzIC0yMiA0MiAtNTIgNzIgLTk2IDk1IC0xNiA5IC0yNiAxNiAtMjEgMTcKMjcgMSA5OCAtNTUgMTIzIC05OCBsMjggLTQ3IDMgLTI5NyAzIC0yOTggMTY5IDAgMTY4IDAgNCA5OSBjMyA4OCA3IDEwNCAzMwoxNDcgMjIgMzUgNDUgNTYgODQgNzYgNTEgMjcgNTkgMjggMjAyIDI4IGwxNDkgMCAwIDQ5IGMwIDkxIDM2IDE1NiAxMTAgMTk5CjQ1IDI3IDQ3IDI3IDI5MCAzMiAxNzMgNCAyNTIgOSAyNjggMTggMTIgNyAyMiAxMCAyMiA3IDAgLTMgLTE2IC0xMyAtMzUgLTIxCi0yNiAtMTEgLTgzIC0xNCAtMjQwIC0xNCAtMTIzIDAgLTIyNSAtNSAtMjUyIC0xMiAtOTIgLTIzIC0xNTkgLTExOSAtMTUxCi0yMTYgbDMgLTM3IDQ5MCAtNSBjNTM3IC01IDUxOCAtMyA1NzYgLTY3IDQwIC00MyA1NiAtODIgNjEgLTE1MyA3IC04NCAzNgotMTQyIDkwIC0xNzcgMzUgLTIzIDU1IC0yOSAxMjEgLTMyIDkzIC00IDk3IC0xIDk3IDgyIDAgNjYgMTkgMTIwIDU4IDE2MCAyOQozMSA5MiA2NyAxMTYgNjcgMTAgMCAxNyAyMCAyNCA3MyBsOSA3MiAyIC02NyBjMSAtNzkgLTMgLTc2IDEyNiAtODEgNzUgLTMgNzQKLTMgLTIyIC01IGwtMTAzIC0yIDAgLTE1MCAwIC0xNDkgMTU4IC0zIDE1NyAtMyAtMTU1IC0xMCAtMTU1IC0xMCAtMyAtOTYgYy0zCi05MyAtMiAtOTcgMjAgLTEwMyAxMyAtMyAxOTcgLTYgNDEwIC02IDMzOCAwIDM4OSAyIDQwMiAxNiAxMiAxMSAxNiAzNSAxNiA4OQowIDk3IC00IDEwNSAtNTAgMTA1IC02OSAwIC04MCAxNSAtMTUgMjAgbDYwIDUgNiA2MCA2IDYwIDEgLTYyIDIgLTYzIDU4IDAKYzQwIDAgNTMgLTMgNDIgLTEwIC04IC01IC0zNCAtMTAgLTU3IC0xMCBsLTQzIDAgMCAtOTkgYzAgLTExMyAtMyAtMTA5IDEwMAotMTEzIDUxIC0xIDUwIC0yIC0yMCAtNyBsLTc1IC02IDAgLTE3NSAwIC0xNzUgNzAgLTUgYzYxIC01IDY2IC02IDM1IC0xMyAtMTkKLTQgLTUxIC04IC03MCAtOSBsLTM1IC0zIDAgLTM0NSAwIC0zNDUgODUgLTYgYzgxIC01IDgyIC01IDI1IC04IC0xMTIgLTUKLTEwOSAtMiAtMTE2IC0xMTYgbC01IC0xMDAgLTIgOTAgYy0xIDUwIC03IDk3IC0xMiAxMDUgLTggMTMgLTEwOSAxNSAtNzg3IDE4Ci01OTQgMiAtNzgzIDAgLTgwMSAtMTAgLTMyIC0xNyAtNTQgNCAtMjkgMjkgMTMgMTMgMTkgMTUgMjkgNSA5IC05IDE5OCAtMTIKODAwIC0xMiBsNzg3IDAgNiAzMyBjOSA0OCAxIDY1NCAtOCA2NjQgLTUgNCAtMTQyIDggLTMwNSA4IC0yODggMCAtMjk4IC0xCi0zMzkgLTIyIC00NyAtMjUgLTg0IC03MSAtMTAyIC0xMjIgLTYgLTE5IC0xMSAtODMgLTExIC0xNDMgMCAtMTE4IC0xMiAtMTU3Ci02NCAtMjEwIC01OCAtNTcgLTY1IC01OCAtNDIzIC01OCAtMjMyIDAgLTMzMiAtMyAtMzQwIC0xMSAtMTIgLTEyIC00MyAtNgotNDMgOCAwIDQgNCAxNSAxMCAyMyA3IDEyIDEzIDEyIDMyIDIgMTcgLTEwIDEwNSAtMTIgMzU1IC0xMCBsMzMxIDMgNDQgMzAKYzcwIDQ5IDg4IDk3IDg4IDIzMiAwIDEzMCAxMSAxNjggNjggMjI2IDYwIDYyIDk0IDY3IDQxOCA2NyBsMjgyIDAgNiAyMyBjOAoyOSA4IDMwMSAwIDMyMSAtNSAxNCAtNTEgMTYgLTQxMyAxNiAtMjIzIDAgLTQxMSAtNCAtNDE3IC04IC02IC00IC0xMyAtNDUKLTE2IC05MiAtNiAtMTIxIC0zOCAtMTcxIC0xNDQgLTIyOSBsLTQ5IC0yNiAtNiAtNzUgYy02IC04MSAtMjEgLTEyMCAtNjYKLTE2MiAtNTQgLTUxIC04NiAtNTggLTI4MyAtNTggLTE1MiAwIC0xODQgLTMgLTE5NyAtMTYgLTE0IC0xNCAtMTcgLTE0IC0zMSAwCi0yMiAyMSAxIDUwIDI4IDM2IDEwIC02IDEwMiAtMTAgMjAzIC0xMCAxNzMgMCAxODYgMSAyMjggMjMgNzkgNDIgMTMxIDE3MAoxMDAgMjUwIGwtMTEgMjcgLTI1MyAwIGMtMTg0IDAgLTI1NiAtMyAtMjY1IC0xMiAtMTcgLTE3IC00NSAxMSAtMzIgMzIgNyAxMgoxMyAxMiAzMiAyIDE4IC0xMCA4NyAtMTIgMjcxIC0xMCAyMDcgMyAyNDkgNSAyNTcgMTggMTMgMjAgMTMgMjUxIDAgMjg0IC05CjI2IC0xMSAyNiAtMTEzIDI2IC0xMjIgMCAtMTUyIC0xNCAtMTYzIC03OCAtMTAgLTY0IC0xNSAtNzMgLTQ3IC05MyAtMjUgLTE0Ci01MSAtMTkgLTExMyAtMTkgLTQ5IDAgLTg1IC01IC05MiAtMTIgLTE3IC0xNyAtNDUgMTEgLTMyIDMyIDggMTIgMTMgMTMgMzAgMwoxMSAtOCA1MyAtMTMgMTAxIC0xMyA3NiAwIDgyIDIgMTEwIDI5IDE3IDE3IDI5IDQwIDI5IDU1IDAgMzUgMTcgNjkgNDMgODYgMTQKMTAgNjAgMTcgMTI5IDIwIDU4IDMgMTEwIDkgMTE0IDEzIDExIDExIDE4IDEyMCAxMCAxNjAgbC02IDM0IC03NCA2IGMtNzkgNgotMTI0IDIzIC0xNjkgNjYgLTQzIDM5IC01OCA3NSAtNjcgMTYzIC05IDk0IC00MCAxNDggLTEwNSAxODIgLTM5IDIwIC01NSAyMQotNTIyIDI0IGwtNDgyIDMgLTYgLTIzIGMtMyAtMTMgLTQgLTg4IC0zIC0xNjggbDMgLTE0NSAxNzUgLTUgYzE5NyAtNiAyMjQKLTE0IDI4NCAtODAgMzUgLTM4IDU2IC05MiA1NiAtMTQwIDAgLTE1IDUgLTMxIDEyIC0zOCAxNyAtMTcgLTExIC00NSAtMzIgLTMyCi0xMiA3IC0xMiAxMyAtMSAzNCAyMiA0MSAtOSAxNDYgLTU1IDE4NyAtNTAgNDQgLTc2IDQ5IC0yNTcgNDkgLTE1MCAwIC0xNzYKLTIgLTE4MSAtMTYgLTEwIC0yNyAtNyAtMTE5IDUgLTEzMSAxNSAtMTUgNCAtNDMgLTE2IC00MyAtMjAgMCAtMzIgMzAgLTE2IDM5CjggNSAxMSAzMSA5IDc3IGwtMyA2OSAtMjIyIDMgLTIyMSAyIC00IC03MSBjLTIgLTM5IDAgLTczIDUgLTc2IDEzIC04IDcgLTMzCi05IC00MCAtMjEgLTggLTM1IDE2IC0yMyAzOCA1IDEwIDkgNDcgOSA4MyBsMCA2NiAtMTcwIDAgLTE3MCAwIDAgLTczIGMwIC00MAo1IC03OCAxMSAtODQgMTUgLTE1IDMgLTMzIC0yMSAtMzMgLTI0IDAgLTM2IDE4IC0yMSAzMyA2IDYgMTEgNDQgMTEgODQgbDAgNzMKLTIwMCAwIC0yMDAgMCAwIC0xMjA1IDAgLTEyMDUgMjA5IDAgYzIwOCAwIDIwOSAwIDIxNSAyMyAxMSA0MSA3IDI5MiAtNSAzMDQKLTE1IDE1IC00IDQzIDE2IDQzIDIwIDAgMzEgLTI4IDE2IC00MyAtMTQgLTE0IC0xNSAtMjgxIC0xIC0zMDggMTAgLTE3IDIzCi0xOSAxNTYgLTE5IDEyMyAwIDE1MCAzIDE4MiAxOSA3OSA0MSAxMTIgMTAzIDExMiAyMTQgMCA0NCAtNSA3OCAtMTIgODUgLTE3CjE3IDExIDQ1IDMyIDMyIDEyIC04IDEzIC0xMyAzIC0zMCAtOCAtMTEgLTEzIC01MiAtMTMgLTk0IDAgLTEwNyAtMzEgLTE2OAotMTA5IC0yMTQgLTQzIC0yNSAtNTQgLTI3IC0xOTYgLTMxIC05OCAtMiAtMTUzIC03IC0xNTcgLTE1IC0xMiAtMTggLTkgLTIxMAozIC0yNDcgMTggLTUxIDU2IC05NyAxMDEgLTEyMCAzNyAtMTkgNjMgLTIxIDM0NyAtMjYgMzQxIC03IDM4MyAtMiA0NDUgNDkgNDkKNDAgNjcgNzkgNzYgMTYxIDEwIDkxIDQ3IDE1MiAxMTUgMTg2IDQ3IDI1IDYwIDI2IDI0NSAzMSBsMTk1IDUgMCAxNTcgMCAxNTYKLTMwIDQzIGMtNDYgNjQgLTEwMCA4OSAtMjAwIDg5IC00NiAwIC04NiAtNSAtOTIgLTExIC0xNSAtMTUgLTMzIC0zIC0zMyAyMiAwCjIwIDM0IDI3IDQ1IDkgMyAtNSA0MCAtMTAgODEgLTEwIDgzIDAgMTM0IC0xNiAxNzcgLTU4IDU1IC01MiA2MiAtNzUgNjcgLTI0MgpsNSAtMTU1IDMzNCAtMyBjMjYxIC0yIDMzNiAxIDM0MyAxMCAxMSAxOSAxMCA2MTIgLTIgNjQyIGwtMTAgMjYgLTI1MyAwCmMtMTg0IDAgLTI1NiAtMyAtMjY1IC0xMiAtOSAtOSAtMTYgLTggLTI5IDUgLTE0IDEzIC0xNSAxOSAtNSAyOSAxMCAxMCAxNyAxMAozMiAwIDIxIC0xMyA0NTIgLTE4IDQ5OCAtNiAxNSA1IDIyIDE0IDIyIDMxIDAgMzYgLTc0IDEwOCAtMTI1IDEyMiAtNTYgMTUKLTM3MCAxNSAtMzk1IC0xIC0xNSAtMTAgLTIyIC0xMCAtMzIgMCAtMTAgMTAgLTkgMTYgNSAyOSAxMyAxMyAxOSAxNSAyOSA1IDgKLTggNjUgLTEyIDE5MyAtMTIgMTc4IDAgMTgyIC0xIDIzNiAtMjcgNDAgLTIxIDYzIC00MiA5MCAtODIgMjAgLTMwIDQ1IC01OAo1NSAtNjIgMTEgLTQgNzIgLTggMTM4IC04IDE0MiAtMSAxODMgLTEyIDI0MiAtNjQgODYgLTc2IDg5IC04NyA5MiAtMzc1IGwzCi0yNTIgNjAgMCBjMzggMCA1OCAtNCA1NCAtMTAgLTMgLTYgLTMxIC0xMCAtNjEgLTEwIGwtNTQgMCAtMiAtODIgYy0xIC03MCAtMgotNzQgLTUgLTIzIC01IDEwMyAtNyAxMDUgLTYxIDEwNiAtMjYgMCAtNjUgNCAtODcgOCAtMzQgNyAtMjcgOSA0NiAxMCA2OSAxCjg4IDQgOTMgMTcgMyA5IDYgMTExIDYgMjI4IDAgMjM3IC04IDI4NiAtNjAgMzQ4IC0xNiAyMCAtNTMgNDggLTgyIDYyIC00OCAyNAotNjIgMjYgLTE4OCAyNiAtOTIgMCAtMTQwIC00IC0xNDggLTEyIC05IC05IC0xMiAtOTggLTEyIC0zNDAgbDAgLTMyOCA5OCAtMQpjODIgLTEgOTAgLTMgNTIgLTEwIC0yNSAtNCAtNjkgLTggLTk3IC04IGwtNTMgLTEgLTIgLTE1MiAtMiAtMTUzIC01IDE0NyBjLTQKODAgLTEwIDE1MCAtMTQgMTU0IC00IDUgLTE1NCA4IC0zMzMgOCAtMjc0IDAgLTMyNyAtMiAtMzM0IC0xNCAtNiAtOCAtMTAKLTEyMCAtMTAgLTI0NyBsMCAtMjMzIDc1IDAgYzQzIDAgNzUgLTQgNzUgLTEwIDAgLTYgLTMyIC0xMCAtNzUgLTEwIGwtNzQgMAotNCAtNjcgLTMgLTY4IC0yIDY4IC0yIDY3IC0xMDkgMCBjLTEyMyAwIC0xNTEgLTcgLTIwMSAtNTMgLTI0IC0yMiAtMjMgLTE5IDUKOSA0OSA0OSAxMDIgNjQgMjI2IDY0IGw3OSAwIC0yIDI0MyAtMyAyNDIgLTExNSA3IGMtNjMgNSAtMTU5IDQgLTIxMiAtMSAtODIKLTcgLTEwMyAtMTIgLTEzMiAtMzQgLTUzIC00MSAtNzYgLTg2IC04NSAtMTcyIC0xMSAtOTMgLTQwIC0xNDIgLTEwOCAtMTgyCmwtNDggLTI4IC0zNDUgMCAtMzQ1IDAgLTQ4IDI4IGMtMjYgMTUgLTYwIDQ3IC03NSA2OSAtMjUgMzggLTI3IDUwIC0zMCAxNTcKLTQgMTgxIDIzIDE2MSAtMjIyIDE2MSBsLTIxMCAwIDAgLTQ4MCAwIC00ODAgMzEzMCAwIDMxMzAgMCAwIDIyMTAgMCAyMjEwCi0zMTMwIDAgLTMxMzAgMCAwIC0xMzB6IG0xOTcwIC0xODMgYzAgLTIgLTEwIC0xMiAtMjIgLTIzIGwtMjMgLTE5IDE5IDIzIGMxOAoyMSAyNiAyNyAyNiAxOXogbTMzMTggLTIyMCBjLTkgLTExIC0xNyAtMTIgLTMwIC00IC0xNiAxMSAtMTYgMTIgMCAyNyAxNCAxNAoxOSAxNCAzMCAzIDExIC0xMCAxMSAtMTUgMCAtMjZ6IG01MDIgMTYgYzAgLTIgLTYgLTExIC0xNCAtMTggLTEyIC0xMiAtMTUKLTEyIC0yMCAxIC04IDIxIDEgMzQgMTkgMjcgOCAtMyAxNSAtNyAxNSAtMTB6IG0tNTEwIC03ODggYzAgLTggMTAgLTE2IDIzCi0xNiBsMjIgLTIgLTIyIC00IGMtMTUgLTMgLTIzIC0xMiAtMjQgLTI2IGwwIC0yMiAtMTEgMjMgYy02IDEyIC0yMCAyMyAtMzIKMjMgLTIwIDIgLTIwIDIgMiA2IDEyIDIgMjIgMTEgMjIgMTkgMCA4IDUgMTQgMTAgMTQgNiAwIDEwIC03IDEwIC0xNXogbS0zOTkwCi0xOTkgYzE1NSAtMzYgMzIyIC0xMDMgNDM1IC0xNzUgOTUgLTYwIDE4NCAtMTM2IDE5NCAtMTY0IDIwIC01NiAtMjYgLTExNwotODcgLTExNyAtMTAgMCAtNTkgMzEgLTExMCA2OCAtOTcgNzEgLTIyNSAxNDAgLTMyMSAxNzMgLTM3NiAxMzAgLTgxMCA1NAotMTExNSAtMTk0IC03MCAtNTcgLTEwNCAtNjEgLTE0NyAtMTggLTQ0IDQ0IC00MCA4NCAxNCAxMzQgMTQ2IDEzNiA0MDcgMjU5CjY0MiAzMDIgMTAxIDE4IDM5OSAxMyA0OTUgLTl6IG0tNDAgLTM2NyBjMTYwIC00MCAzNzYgLTE1OSA0MDcgLTIyNSAyMSAtNDQgMwotOTEgLTQyIC0xMTAgLTQwIC0xNyAtNjggLTkgLTEyNCAzNCAtNjAgNDUgLTE2MSA5NSAtMjUxIDEyNCAtNjUgMjAgLTk1IDIzCi0yMjUgMjMgLTE0NCAtMSAtMTU0IC0yIC0yNDggLTM0IC02NSAtMjMgLTEyOCAtNTQgLTE5MCAtOTQgLTcwIC00NyAtOTkgLTYxCi0xMjYgLTYwIC02MCAyIC0xMDAgNjkgLTcxIDEyMiAxMiAyMyA5OSA4OCAxNzAgMTI4IDEwNSA1OCAyMTcgOTQgMzY1IDExNyA2NAoxMCAyNTMgLTQgMzM1IC0yNXogbTQ3NjYgLTU1IGMtNyAtNyAtMTQgLTggLTIyIDAgLTcgNyAtOCAxNCAwIDIyIDcgNyAxNCA4CjIyIDAgNyAtNyA4IC0xNCAwIC0yMnogbS00ODYxIC0yOTkgYzc5IC0yMSAxODMgLTcwIDIxOCAtMTAyIDMzIC0zMyAzNiAtNzkgNgotMTE3IC0yOCAtMzUgLTc0IC0zNCAtMTQyIDQgLTc4IDQ0IC0xNjcgNjQgLTI1NyA1NyAtNjAgLTUgLTkwIC0xNCAtMTU2IC00NgotOTEgLTQ2IC0xMzAgLTUxIC0xNjEgLTIxIC01MyA0OSAtMzYgMTA1IDQ2IDE1NCA2MCAzNiAxMjEgNjAgMTg2IDc1IDY0IDE0CjE5NiAxMiAyNjAgLTR6IG00ODYzIC0xNjIgYy03IC05IC0xMyAtOSAtMjIgMCAtOSA4IC0xMCAxNSAtMiAyMyAxNSAxNSAzOCAtNgoyNCAtMjN6IG0tNDk4MSAtMjQ5IGMtMyAtMyAtMTIgLTQgLTE5IC0xIC04IDMgLTUgNiA2IDYgMTEgMSAxNyAtMiAxMyAtNXoKbTM0NTYgLTIwNiBsNDIgLTEgLTQyIC00IC00MyAtNCAwIC00MiBjMCAtMzEgLTMgLTM4IC0xMCAtMjcgLTUgOCAtMTAgMjcgLTEwCjQzIDAgMjYgLTIgMjcgLTUyIDI5IGwtNTMgMiA1MyAzIGM0NyA0IDUyIDYgNTIgMjggMCAxMyAzIDMyIDggNDIgNSAxMyA4IDYKMTAgLTI0IDMgLTQzIDMgLTQzIDQ1IC00NXogbTk2NSAtMzg4IGMxNiAtMSAxNiAtMiAwIC0xNCAtMTAgLTcgLTE4IC0xOSAtMTkKLTI3IDAgLTExIC0yIC0xMSAtNiAxIC00IDggLTEzIDIwIC0yMiAyNyAtMTQgMTEgLTE0IDEyIDIgMTMgOSAwIDE4IDggMTggMTgKMSAxNiAyIDE2IDYgMCAyIC0xMCAxMiAtMTggMjEgLTE4eiBtLTUgLTMyMiBjOSAtMiA3IC05IC01IC0yMCAtMTUgLTE1IC0xOAotMTUgLTE4IC0zIDAgOCAtOCAxNiAtMTcgMTYgLTE3IDEgLTE3IDIgMCA2IDkgMiAxOCAxMiAxOCAyMSAxIDE2IDIgMTYgNiAwIDIKLTkgMTAgLTE4IDE2IC0yMHogbS0zODMyIC01NDUgYy0xMiAtMjAgLTE0IC0xNCAtNSAxMiA0IDkgOSAxNCAxMSAxMSAzIC0yIDAKLTEzIC02IC0yM3ogbTYyIC0xNjUgbDcyIC0yIC03MiAtMyAtNzMgLTQgLTIgLTUyIC0xIC01MiAtNiA1MCAtNiA1MCAtNzAgNQotNzAgNCA3MCA2IDcwIDUgNSA3MCA0IDcwIDQgLTcyIDMgLTczIDcyIC0yeiBtMzI5NCAtMTEwIGMtMTAgLTE1IC0xMiAtMTUKLTIzIDAgLTggMTEgLTggMTkgLTEgMjcgMTcgMTggMzcgLTUgMjQgLTI3eiBtNDcxIDUgYy03IC05IC0xMyAtOSAtMjIgMCAtOSA4Ci0xMCAxNSAtMiAyMyAxNSAxNSAzOCAtNiAyNCAtMjN6Ii8+CjxwYXRoIGQ9Ik04OTEgMzcyOCBjLTg5IC00NiAtMTI4IC0xMzMgLTExNCAtMjU4IGw2IC02MCAyMjQgMCAyMjMgMCAtMiAxNjgKLTMgMTY3IC0xNDUgMyBjLTEzNCAyIC0xNDggMSAtMTg5IC0yMHoiLz4KPHBhdGggZD0iTTI4MzAgMzYxNyBjLTkxIC0yMyAtMTQzIC0xMDQgLTEzOCAtMjE0IGwzIC02OCA4NyAtMyA4NiAtMyA3IDg2IGM0CjQ2IDMgMTEzIC0xIDE0OCBsLTkgNjMgLTM1IC05eiIvPgo8cGF0aCBkPSJNMjcwMyAzMzA0IGMtOSAtNCAtMTMgLTMzIC0xMyAtOTQgbDAgLTg5IDQxIC0xMSBjMjQgLTcgNjMgLTkgOTEgLTUKbDQ5IDcgLTMgOTYgLTMgOTcgLTc1IDIgYy00MSAxIC04MSAtMSAtODcgLTN6Ii8+CjxwYXRoIGQ9Ik0yNzAyIDMwNzUgYy05IC0xMSAtMTIgLTUzIC0xMCAtMTU3IGwzIC0xNDMgMzQgMiBjNDAgMSA5NiA0NCAxMjMKOTMgMTUgMjggMTggNTIgMTYgMTI1IGwtMyA5MCAtNzUgMiBjLTU2IDIgLTc4IC0xIC04OCAtMTJ6Ii8+CjwvZz4KPC9zdmc+Cg==)
+}
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 90vh;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 100vh;
+
+}
+
+.router-image {
+    width: 240px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(150vh - 1px); /* Adjust for padding */
+    width: 100%;
+    background: linear-gradient(#114232, #76b900);
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.form-container {
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    margin:  30px; /* Center the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: 600; /* Adjust the font weight as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group {
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-right: 10px;
+    width: 50px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%; /* Adjust to fit container */
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '\2713';
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+    background-color: #611010;
+    border-radius: 1px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.reveal-input-container {
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.reveal-input {
+    display: none;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 250px;
+}
+
+
+.reveal-input:active, .reveal-input:focus {
+    display: block;
+}
+
+#ip-checkbox, #gateway-checkbox {
+    margin-top: -50px;
+    margin-bottom: -7px;
+    margin-left: 1px;
+}
+
+button {
+    margin-top: 50px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background 0.3s;
+    align-self: center;
+    background-color: green;
+}
+
+button:hover {
+    background: linear-gradient(to right, #a5e65a, #8bdb50);
+}
+
+.dropbtn {
+    background-color: rgb(11, 126, 11);
+    color: #fff;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    max-width: 1000px;
+    width: 250px;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 0.2);
+    top: 52%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 20px;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    padding: 10px 16px;
+    cursor: pointer;
+    margin: 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown-content li:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-list {
+    padding: 0;
+    margin: 0;
+}
+
+.show {
+    display: block;
+}
+
+.wifi-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.wifi-signal {
+    width: 20px;
+    height: 23px;
+}
+
+.wifi-signal-selected {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropdown-icon {
+    font-size: 10px;
+    margin-left: 40px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    .image-section, .form-section {
+        padding: 0;
+        text-align: center;
+    }
+
+    .form-section {
+        padding-top: 20px;
+    }
+
+    .image-section img {
+        width: 80px;
+    }
+
+    .form-section input[type="text"], .form-section input[type="password"] {
+        width: 100%;
+    }
+
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .form-section {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .dropdown {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .input-group label {
+        margin-bottom: 5px;
+    }
+
+    .input-group input[type="text"], .input-group input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .input-group .checkbox-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .checkbox-wrapper label {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .button-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .button-container button {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .router-image {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .network-info {
+        margin-bottom: 10px;
+    }
+}
+
+#ipAddress, #gatewayAddress {
+    display: none; /* Ensure inputs are hidden by default */
+}
